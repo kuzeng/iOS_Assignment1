@@ -55,3 +55,33 @@ func factorial(_ N: Int) -> Int {
 
 factorial(8)
 
+
+//class NamedShape {
+//    var numberOfSides: Int = 0
+//    var name: String
+//
+//    init(name: String) {
+//        self.name = name
+//    }
+//
+//    func simpleDescription() -> String {
+//        return "A shape with \(numberOfSides) sides."
+//    }
+//}
+
+
+struct NamedShape {
+    var numberOfSides: Int = 0
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func simpleDescription() -> String {
+        return "my struct shape with \(numberOfSides) sides"
+    }
+}
+
+let shape = NamedShape(name: "my shape")
+shape.simpleDescription()
